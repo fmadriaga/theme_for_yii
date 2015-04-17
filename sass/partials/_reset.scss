@@ -1,0 +1,27 @@
+body {
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	color:$main_text_color;
+	font-family:$fuente_principal;
+}
+
+h1{
+	font-size: 2.3em;
+}
+h2{
+	font-size:2em;
+}
+h3{
+	font-size:1.3em;
+}
+p{
+	font-size:0.9em;
+}
+a{
+	text-decoration: none;
+	color:$main_text_color;
+}
+::-webkit-input-placeholder { color:rgba(255,255,255,0.7); font-family: $fuente_principal; font-size:1.1em; padding-left:10px; }
+::-moz-placeholder { color:rgba(255,255,255,0.7); font-family: $fuente_principal; font-size:1.1em; padding-left:10px; } /* firefox 19+ */
+:-ms-input-placeholder { color:rgba(255,255,255,0.7); font-family: $fuente_principal; font-size:1.1em; padding-left:10px; } /* ie */
+input:-moz-placeholder { color:rgba(255,255,255,0.7); font-family: $fuente_principal; font-size:1.1em; padding-left:10px; }

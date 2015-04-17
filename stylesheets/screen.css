@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*Importa los Partials*/
+/* line 4, ../sass/partials/_base.scss */
+#lista {
+  background-color: blue;
+}
+
+/*Importa los módulos*/
+/* line 1, ../sass/pages/_header.scss */
+header {
+  height: 80px;
+  width: 100%;
+}
+/* line 4, ../sass/pages/_header.scss */
+header a {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 6, ../sass/pages/_header.scss */
+header a img {
+  padding-left: 50px;
+  float: left;
+  width: 413px;
+}
+/* line 13, ../sass/pages/_header.scss */
+header nav {
+  float: right;
+  padding-right: 50px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 18, ../sass/pages/_header.scss */
+header nav div {
+  display: none;
+  padding-right: 10px;
+}
+/* line 21, ../sass/pages/_header.scss */
+header nav div svg {
+  width: 50%;
+  float: right;
+}
+/* line 28, ../sass/pages/_header.scss */
+header nav ul li {
+  display: inline;
+  padding-left: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 38, ../sass/pages/_header.scss */
+  header {
+    background-color: black;
+  }
+  /* line 41, ../sass/pages/_header.scss */
+  header a img {
+    width: 258px;
+    height: 50px;
+  }
+  /* line 50, ../sass/pages/_header.scss */
+  header nav ul li {
+    padding-left: 15px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  /* line 59, ../sass/pages/_header.scss */
+  header {
+    height: 50px;
+    background-color: blue;
+  }
+  /* line 64, ../sass/pages/_header.scss */
+  header a img {
+    padding-left: 10px;
+    display: block;
+    margin: auto auto;
+    width: 60%;
+    height: 60%;
+  }
+  /* line 72, ../sass/pages/_header.scss */
+  header nav {
+    padding-right: 10px;
+    width: 30%;
+  }
+  /* line 76, ../sass/pages/_header.scss */
+  header nav div {
+    display: block;
+  }
+  /* line 79, ../sass/pages/_header.scss */
+  header nav div svg g {
+    fill: #383838;
+  }
+  /* line 84, ../sass/pages/_header.scss */
+  header nav ul {
+    display: none;
+  }
+  /* line 86, ../sass/pages/_header.scss */
+  header nav ul li {
+    padding-left: 15px;
+  }
+}
+/* line 1, ../sass/partials/_reset.scss */
+body {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  color: #383838;
+  font-family: "latha", Lucida Sans, Georgia, Serif;
+}
+
+/* line 8, ../sass/partials/_reset.scss */
+h1 {
+  font-size: 2.3em;
+}
+
+/* line 11, ../sass/partials/_reset.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 14, ../sass/partials/_reset.scss */
+h3 {
+  font-size: 1.3em;
+}
+
+/* line 17, ../sass/partials/_reset.scss */
+p {
+  font-size: 0.9em;
+}
+
+/* line 20, ../sass/partials/_reset.scss */
+a {
+  text-decoration: none;
+  color: #383838;
+}
+
+/* line 24, ../sass/partials/_reset.scss */
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "latha", Lucida Sans, Georgia, Serif;
+  font-size: 1.1em;
+  padding-left: 10px;
+}
+
+/* line 25, ../sass/partials/_reset.scss */
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "latha", Lucida Sans, Georgia, Serif;
+  font-size: 1.1em;
+  padding-left: 10px;
+}
+
+/* firefox 19+ */
+/* line 26, ../sass/partials/_reset.scss */
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "latha", Lucida Sans, Georgia, Serif;
+  font-size: 1.1em;
+  padding-left: 10px;
+}
+
+/* ie */
+/* line 27, ../sass/partials/_reset.scss */
+input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "latha", Lucida Sans, Georgia, Serif;
+  font-size: 1.1em;
+  padding-left: 10px;
+}

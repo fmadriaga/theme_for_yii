@@ -1,0 +1,92 @@
+header{
+	height:80px;
+	width:100%;
+	a{
+		@include vertical-align();
+		img{
+			padding-left:50px;
+			float:left;
+			width:413px;
+		}
+	}
+
+	nav{
+		float:right;
+		padding-right:50px;
+		@include vertical-align();
+
+		div{
+			display:none;
+			padding-right:10px;
+			svg{
+				width:50%;
+				float:right;
+			}
+		}
+
+		ul{
+			li{
+				display:inline;
+				padding-left:20px;
+			}
+		}
+	}
+
+}
+
+@media #{$tablet} {
+	header{
+		background-color:black;
+		a{
+			img{
+				width:258px;
+				height:50px;
+			}
+		}
+
+		nav{
+
+			ul{
+				li{
+					padding-left:15px;
+				}
+			}
+		}
+	}
+}
+
+@media #{$phone}{
+	header{
+		height:50px;
+		background-color:blue;
+
+		a{
+			img{
+				padding-left:10px;
+				@include center();
+				width:60%;
+				height:60%;
+			}
+		}
+
+		nav{
+			padding-right:10px;
+			width:30%;
+
+			div{
+				display: block;
+				svg{
+					g{
+						fill:#383838;
+					}
+				}
+			}
+			ul{
+				display:none;
+				li{
+					padding-left:15px;
+				}
+			}
+		}
+	}
+}
