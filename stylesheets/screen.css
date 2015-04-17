@@ -75,100 +75,227 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*Importa los módulos*/
-/* line 1, ../sass/pages/_header.scss */
-header {
-  height: 80px;
+/* line 1, ../sass/pages/_inicio.scss */
+main {
   width: 100%;
 }
-/* line 4, ../sass/pages/_header.scss */
-header a {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+/* line 4, ../sass/pages/_inicio.scss */
+main section.slider {
+  /* En la hoja de estilos del pluggin "bjqs.css" se encuentran estilos añadidos para el mismo. */
 }
-/* line 6, ../sass/pages/_header.scss */
-header a img {
-  padding-left: 50px;
+/* line 5, ../sass/pages/_inicio.scss */
+main section.slider img {
+  overflow: hidden;
+  height: 100%;
+}
+/* line 13, ../sass/pages/_inicio.scss */
+main section.principal {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+/* line 18, ../sass/pages/_inicio.scss */
+main section.principal h2 {
+  padding-top: 50px;
+}
+/* line 22, ../sass/pages/_inicio.scss */
+main section.principal p {
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  line-height: 20px;
+}
+/* line 29, ../sass/pages/_inicio.scss */
+main section.principal span {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 10px 20px 10px 20px;
+  background-color: #0074c5;
+  color: white;
+  text-align: center;
+}
+/* line 39, ../sass/pages/_inicio.scss */
+main section.social {
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 48, ../sass/pages/_inicio.scss */
+  main .principal {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /* line 51, ../sass/pages/_inicio.scss */
+  main .principal h2 {
+    padding-top: 30px;
+  }
+  /* line 55, ../sass/pages/_inicio.scss */
+  main .principal p {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  /* line 65, ../sass/pages/_inicio.scss */
+  main .principal {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  /* line 68, ../sass/pages/_inicio.scss */
+  main .principal h2 {
+    padding-top: 20px;
+  }
+  /* line 72, ../sass/pages/_inicio.scss */
+  main .principal p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+/* line 1, ../sass/pages/_header.scss */
+header {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  top: 0px;
+}
+/* line 7, ../sass/pages/_header.scss */
+header a {
   float: left;
-  width: 413px;
+  height: 100%;
+  /*padding-left:50px;*/
+  margin-left: 50px;
 }
 /* line 13, ../sass/pages/_header.scss */
-header nav {
-  float: right;
-  padding-right: 50px;
+header a img {
+  width: 90%;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 18, ../sass/pages/_header.scss */
+/* line 19, ../sass/pages/_header.scss */
+header nav {
+  position: absolute;
+  margin-right: 50px;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 25, ../sass/pages/_header.scss */
 header nav div {
   display: none;
   padding-right: 10px;
 }
-/* line 21, ../sass/pages/_header.scss */
+/* line 29, ../sass/pages/_header.scss */
 header nav div svg {
-  width: 50%;
+  width: 100%;
   float: right;
 }
-/* line 28, ../sass/pages/_header.scss */
+/* line 35, ../sass/pages/_header.scss */
+header nav ul {
+  float: right;
+}
+/* line 38, ../sass/pages/_header.scss */
 header nav ul li {
   display: inline;
   padding-left: 20px;
+  top: 50%;
+}
+/* line 43, ../sass/pages/_header.scss */
+header nav ul li a {
+  margin-left: 0px;
+  float: none;
+  padding-left: 0px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 38, ../sass/pages/_header.scss */
-  header {
-    background-color: black;
+  /* line 56, ../sass/pages/_header.scss */
+  header a {
+    width: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-right: 0px;
   }
-  /* line 41, ../sass/pages/_header.scss */
+  /* line 61, ../sass/pages/_header.scss */
   header a img {
-    width: 258px;
-    height: 50px;
+    width: 100%;
   }
-  /* line 50, ../sass/pages/_header.scss */
-  header nav ul li {
-    padding-left: 15px;
+  /* line 66, ../sass/pages/_header.scss */
+  header nav {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 0px;
+  }
+  /* line 75, ../sass/pages/_header.scss */
+  header nav ul li a {
+    margin-left: 0px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  /* line 59, ../sass/pages/_header.scss */
-  header {
-    height: 50px;
-    background-color: blue;
+  /* line 87, ../sass/pages/_header.scss */
+  header a {
+    width: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-right: 0px;
   }
-  /* line 64, ../sass/pages/_header.scss */
+  /* line 92, ../sass/pages/_header.scss */
   header a img {
-    padding-left: 10px;
-    display: block;
-    margin: auto auto;
-    width: 60%;
-    height: 60%;
+    width: 100%;
   }
-  /* line 72, ../sass/pages/_header.scss */
+  /* line 97, ../sass/pages/_header.scss */
   header nav {
-    padding-right: 10px;
-    width: 30%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-left: 0px;
+    height: 70px;
   }
-  /* line 76, ../sass/pages/_header.scss */
+  /* line 102, ../sass/pages/_header.scss */
   header nav div {
     display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 0px;
+    top: 0px;
   }
-  /* line 79, ../sass/pages/_header.scss */
+  /* line 109, ../sass/pages/_header.scss */
+  header nav div svg {
+    width: 50px;
+    height: 75px;
+  }
+  /* line 113, ../sass/pages/_header.scss */
   header nav div svg g {
     fill: #383838;
   }
-  /* line 84, ../sass/pages/_header.scss */
+  /* line 118, ../sass/pages/_header.scss */
   header nav ul {
     display: none;
+    position: absolute;
+    top: 75px;
+    width: 105vw;
+    display: block;
+    margin: auto auto;
   }
-  /* line 86, ../sass/pages/_header.scss */
+  /* line 125, ../sass/pages/_header.scss */
   header nav ul li {
-    padding-left: 15px;
+    display: block;
+    background-color: rgba(56, 56, 56, 0.9);
+    text-align: center;
+    font-size: 1em;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  /* line 134, ../sass/pages/_header.scss */
+  header nav ul li a {
+    margin-left: 0px;
+    color: white;
+    display: block;
+    margin: auto auto;
   }
 }
 /* line 1, ../sass/partials/_reset.scss */
@@ -237,4 +364,114 @@ input:-moz-placeholder {
   font-family: "latha", Lucida Sans, Georgia, Serif;
   font-size: 1.1em;
   padding-left: 10px;
+}
+
+/* line 2, ../sass/vendor/_slideJquery.scss */
+.slider div#banner-fade {
+  /*ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}*/
+  /*li.bjqs-slide{position:absolute; display:none;}*/
+  /*ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}*/
+  /*ul.bjqs-controls.v-centered li a{position:absolute;}*/
+  /*ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}*/
+  /*ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}*/
+  /*ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}*/
+  /*ol.bjqs-markers.h-centered{text-align: center;}*/
+  /*ol.bjqs-markers li{display:inline;}*/
+  /*ol.bjqs-markers li a{display:inline-block;}*/
+  /* Estilos para mi tema */
+}
+/* line 13, ../sass/vendor/_slideJquery.scss */
+.slider div#banner-fade p.bjqs-caption {
+  display: block;
+  width: 96%;
+  margin: 0;
+  padding: 2%;
+  position: absolute;
+  bottom: 0;
+}
+/* line 16, ../sass/vendor/_slideJquery.scss */
+.slider div#banner-fade ul.bjqs {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: none;
+}
+/* line 25, ../sass/vendor/_slideJquery.scss */
+.slider div#banner-fade ul.bjqs li.bjqs-slide {
+  position: absolute;
+  display: none;
+}
+/* line 32, ../sass/vendor/_slideJquery.scss */
+.slider div#banner-fade ul.bjqs-controls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+/* line 38, ../sass/vendor/_slideJquery.scss */
+.slider div#banner-fade ul.bjqs-controls.v-centered li {
+  font-size: 3em;
+}
+/* line 41, ../sass/vendor/_slideJquery.scss */
+.slider div#banner-fade ul.bjqs-controls.v-centered li a {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: rgba(56, 56, 56, 0.5);
+}
+/* line 49, ../sass/vendor/_slideJquery.scss */
+.slider div#banner-fade ul.bjqs-controls.v-centered li.bjqs-next a {
+  right: 0;
+}
+/* line 50, ../sass/vendor/_slideJquery.scss */
+.slider div#banner-fade ul.bjqs-controls.v-centered li.bjqs-prev a {
+  left: 0;
+}
+/* line 54, ../sass/vendor/_slideJquery.scss */
+.slider div#banner-fade ol.bjqs-markers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+}
+/* line 61, ../sass/vendor/_slideJquery.scss */
+.slider div#banner-fade ol.bjqs-markers li {
+  display: inline;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-left: 2px;
+  margin-right: 2px;
+  background-color: rgba(56, 56, 56, 0.5);
+  text-align: center();
+  border: solid rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 75, ../sass/vendor/_slideJquery.scss */
+.slider div#banner-fade ol.bjqs-markers li a {
+  display: inline-block;
+  color: rgba(56, 56, 56, 0);
+}
+/* line 81, ../sass/vendor/_slideJquery.scss */
+.slider div#banner-fade ol.bjqs-markers.h-centered {
+  text-align: center;
+  margin-top: -50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 104, ../sass/vendor/_slideJquery.scss */
+  ol.bjqs-markers.h-centered {
+    margin-top: -30px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  /* line 118, ../sass/vendor/_slideJquery.scss */
+  ol.bjqs-markers {
+    display: none;
+  }
 }

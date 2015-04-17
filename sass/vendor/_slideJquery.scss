@@ -1,0 +1,121 @@
+.slider{
+		div#banner-fade{
+		/*ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}*/
+		/*li.bjqs-slide{position:absolute; display:none;}*/
+		/*ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}*/
+		/*ul.bjqs-controls.v-centered li a{position:absolute;}*/
+		/*ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}*/
+		/*ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}*/
+		/*ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}*/
+		/*ol.bjqs-markers.h-centered{text-align: center;}*/
+		/*ol.bjqs-markers li{display:inline;}*/
+		/*ol.bjqs-markers li a{display:inline-block;}*/
+		p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+
+		/* Estilos para mi tema */
+		ul.bjqs{
+			position:relative;
+			list-style:none;
+			padding:0;
+			margin:0;
+			overflow:hidden;
+			display:none;
+
+			li{
+				&.bjqs-slide{
+					position:absolute;
+					display:none;
+				}
+			}
+		}
+
+		ul.bjqs-controls{
+			list-style:none;
+			margin:0;
+			padding:0;
+			z-index:9999;
+
+			&.v-centered li {
+				font-size:3em;
+
+				a{
+					position:absolute;
+					color:rgba(255,255,255,0.5);
+					padding-left:4px;
+					padding-right:4px;
+					background-color:rgba(56,56,56,0.5);
+				}
+
+				&.bjqs-next a{right:0;}
+				&.bjqs-prev a{left:0;}
+			}
+		}
+
+		ol.bjqs-markers{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			width:100%;
+			position:absolute;
+
+			li{
+				display:inline;
+				padding-left:4px;
+				padding-right:4px;
+				margin-left:2px;
+				margin-right:2px;
+				background-color:rgba(56,56,56,0.5);
+				text-align: center();
+				border:solid rgba(255,255,255,0.5);
+
+				-webkit-border-radius:10px;
+				-moz-border-radius:10px;
+				border-radius:10px;
+
+				a{
+					display:inline-block;
+					color:rgba(56,56,56,0.0);
+				}
+			}
+
+			&.h-centered{
+				text-align: center;
+				margin-top:-50px;
+			}
+		}
+	}
+}
+
+@media #{$tablet} {
+	ul.bjqs-controls.v-centered li {
+
+		a{
+		}
+	}
+
+	ol.bjqs-markers{
+
+		li{
+
+			a{
+			}
+		}
+
+		&.h-centered{
+			margin-top:-30px;
+		}
+	}
+}
+
+@media #{$phone} {
+	
+	ul.bjqs-controls.v-centered li {
+
+		a{
+		}
+	}
+
+	ol.bjqs-markers{
+		display:none;
+	}
+}

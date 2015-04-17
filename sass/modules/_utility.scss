@@ -10,3 +10,13 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+@mixin tablet-margins(){
+	margin-left:20px;
+	margin-right:20px;
+}
+
+@mixin phone-margins(){
+	margin-left:5px;
+	margin-right:5px;
+}
