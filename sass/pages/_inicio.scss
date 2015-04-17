@@ -38,6 +38,64 @@ main{
 
 		&.social{
 			margin-top:50px;
+			width:100%;
+			background-color:rgba(56,56,56,0.2);
+			height:50px;
+
+			article{
+				height:100%;
+				display:inline;
+				position:relative;
+
+				&:nth-child(1){
+
+					h3{
+						display:inline;
+						margin-left:50px;
+						margin-top:10px;
+						padding-right:30px;
+						position:absolute;
+						width:200px;
+					}
+
+					ul{
+						position:absolute;
+						width:130px;
+						left:200px;
+						margin-top:5px;
+
+						li{
+							position:static;
+							display:inline-table;
+
+							svg{
+								height:35px;
+								width:35px;
+							}
+
+							&:nth-child(1){
+								svg{
+									g{ fill:$facebook_color; }
+								}
+							}
+							&:nth-child(2){
+								svg{
+									fill:$twitter_color;
+								}
+							}
+							&:nth-child(3){
+								svg{
+									g{ fill:$linkedin_color; }
+								}
+							}
+						}
+					}
+				}
+
+				&:nth-child(2){
+					float:right;
+				}
+			}
 		}
 	}
 }

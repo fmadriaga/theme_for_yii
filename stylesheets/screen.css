@@ -117,35 +117,86 @@ main section.principal span {
 /* line 39, ../sass/pages/_inicio.scss */
 main section.social {
   margin-top: 50px;
+  width: 100%;
+  background-color: rgba(56, 56, 56, 0.2);
+  height: 50px;
+}
+/* line 45, ../sass/pages/_inicio.scss */
+main section.social article {
+  height: 100%;
+  display: inline;
+  position: relative;
+}
+/* line 52, ../sass/pages/_inicio.scss */
+main section.social article:nth-child(1) h3 {
+  display: inline;
+  margin-left: 50px;
+  margin-top: 10px;
+  padding-right: 30px;
+  position: absolute;
+  width: 200px;
+}
+/* line 61, ../sass/pages/_inicio.scss */
+main section.social article:nth-child(1) ul {
+  position: absolute;
+  width: 130px;
+  left: 200px;
+  margin-top: 5px;
+}
+/* line 67, ../sass/pages/_inicio.scss */
+main section.social article:nth-child(1) ul li {
+  position: static;
+  display: inline-table;
+}
+/* line 71, ../sass/pages/_inicio.scss */
+main section.social article:nth-child(1) ul li svg {
+  height: 35px;
+  width: 35px;
+}
+/* line 78, ../sass/pages/_inicio.scss */
+main section.social article:nth-child(1) ul li:nth-child(1) svg g {
+  fill: #3b5998;
+}
+/* line 82, ../sass/pages/_inicio.scss */
+main section.social article:nth-child(1) ul li:nth-child(2) svg {
+  fill: #55acee;
+}
+/* line 88, ../sass/pages/_inicio.scss */
+main section.social article:nth-child(1) ul li:nth-child(3) svg g {
+  fill: #0077b5;
+}
+/* line 95, ../sass/pages/_inicio.scss */
+main section.social article:nth-child(2) {
+  float: right;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 48, ../sass/pages/_inicio.scss */
+  /* line 106, ../sass/pages/_inicio.scss */
   main .principal {
     margin-left: 20px;
     margin-right: 20px;
   }
-  /* line 51, ../sass/pages/_inicio.scss */
+  /* line 109, ../sass/pages/_inicio.scss */
   main .principal h2 {
     padding-top: 30px;
   }
-  /* line 55, ../sass/pages/_inicio.scss */
+  /* line 113, ../sass/pages/_inicio.scss */
   main .principal p {
     padding-top: 10px;
     padding-bottom: 30px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  /* line 65, ../sass/pages/_inicio.scss */
+  /* line 123, ../sass/pages/_inicio.scss */
   main .principal {
     margin-left: 5px;
     margin-right: 5px;
   }
-  /* line 68, ../sass/pages/_inicio.scss */
+  /* line 126, ../sass/pages/_inicio.scss */
   main .principal h2 {
     padding-top: 20px;
   }
-  /* line 72, ../sass/pages/_inicio.scss */
+  /* line 130, ../sass/pages/_inicio.scss */
   main .principal p {
     padding-top: 15px;
     padding-bottom: 15px;
