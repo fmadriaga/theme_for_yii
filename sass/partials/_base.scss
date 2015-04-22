@@ -1,5 +1,6 @@
 // Use Compass ('cause it rocks!)
 @import "compass";
+@import "animation";
 
 #lista{background-color:blue;}
 @import "modules/all";
@@ -10,4 +11,4 @@
 @import "reset";
 @import "typography";
 
-@import "vendor/_slideJquery.scss";
+@import "vendor/slideJquery";

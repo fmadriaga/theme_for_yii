@@ -1,0 +1,77 @@
+#modulares{
+	section{
+
+		&:nth-child(1){
+			width:100%;
+			height:240px;
+			background-image:url("../images/modulares_section_1.jpg");
+			background-repeat: no-repeat;
+			background-size:cover;
+			color:white;
+			padding-top:50px;
+
+			h2{
+				position:relative;
+				margin-left:50px;
+				margin-bottom:30px;
+				padding:7px;
+				padding-left:17px;
+				background-color:rgba(0,0,0,0.8);
+				width:385px;
+			}
+
+			p{
+				margin-left:50px;
+				margin-right:50px;
+				line-height: 20px;
+				margin-left:50px;
+				padding:7px;
+				padding-left:17px;
+				background-color:rgba(0,0,0,0.8);
+			}
+		}
+		
+		&:nth-child(2){
+			article.galeria{
+				width:100%;
+				overflow:hidden;
+
+				h3{
+					text-align: center;
+					margin-top:50px;
+					margin-bottom:30px;
+				}
+
+				div.galery_list{
+					width:200px;
+					height:200px;
+
+					div.galery_unit{
+						height:100%;
+						margin-left:5px;
+						margin-right:5px;
+						
+						a{
+							width:100%;
+							height:100%;
+
+							img{
+							}
+
+							div{
+								display:none;
+								h5{
+
+								}
+								p{
+
+								}
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

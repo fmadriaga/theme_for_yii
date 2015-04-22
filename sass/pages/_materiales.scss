@@ -1,0 +1,20 @@
+#materiales{
+	section{
+		&:nth-child(1){
+			overflow: hidden;
+			width:100%;
+
+			div.slick_slide{
+
+				div{
+					img{
+					}
+				}
+			}
+		}
+
+		&:nth-child(2){
+			@include section_standard();
+		}
+	}
+}

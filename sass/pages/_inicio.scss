@@ -11,20 +11,8 @@ main{
 		}
 
 		&.principal{
-			margin-left:50px;
-			margin-right:50px;
-			text-align:center;
 
-			h2{
-				padding-top:50px;
-			}
-
-			p{
-				text-align:left;
-				padding-top:30px;
-				padding-bottom:50px;
-				line-height: 20px;
-			}
+			@include section_standard();
 
 			span{
 				margin-top:20px;
@@ -33,6 +21,7 @@ main{
 				background-color:$second_text_color;
 				color:white;
 				text-align:center;
+				cursor:pointer;
 			}
 		}
 
@@ -43,9 +32,7 @@ main{
 			height:50px;
 
 			article{
-				height:100%;
 				display:inline;
-				position:relative;
 
 				&:nth-child(1){
 
@@ -56,6 +43,7 @@ main{
 						padding-right:30px;
 						position:absolute;
 						width:200px;
+						color:$second_text_color;
 					}
 
 					ul{
@@ -93,7 +81,35 @@ main{
 				}
 
 				&:nth-child(2){
+					margin-top:15px;
 					float:right;
+					margin-right:50px;
+
+					h3{
+						float:left;
+						margin-right:10px;
+						color:$second_text_color;
+					}
+
+					form{
+						float:right;
+
+						input{
+							margin-right:0px;
+							height:20px;
+							border:none;
+							background-color:white;
+							color:$main_text_color;
+
+							&:nth-child(3){
+								height:22px;
+								margin-left:-3px;
+								background-color:$second_text_color;
+								color:white;
+								cursor:pointer;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -102,17 +118,56 @@ main{
 
 @media #{$tablet} {
 	main{
+		section{
+			.principal{
+				@include tablet_margins();
 
-		.principal{
-			@include tablet_margins();
+				h2{
+					padding-top:30px;
+				}
 
-			h2{
-				padding-top:30px;
+				p{
+					padding-top:10px;
+					padding-bottom:30px;
+				}
 			}
 
-			p{
-				padding-top:10px;
-				padding-bottom:30px;
+			&.social{
+
+				article{
+					display:inherit;
+					@include tablet_margins();
+					margin-right:0px;
+
+					&:nth-child(1){
+						h3{
+							display:none;
+						}
+						ul{
+							position:inherit;
+							float:left;
+						}
+					}
+
+					&:nth-child(2){
+
+						h3{
+						}
+
+						form{
+
+							input{
+
+								&:nth-child(1), &:nth-child(2){
+									width:100px;
+								}
+
+								&:nth-child(3){
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -120,16 +175,76 @@ main{
 
 @media #{$phone} {
 	main{
-		.principal{
-			@include phone_margins();
+		section{
+			.principal{
+				@include phone_margins();
 
-			h2{
-				padding-top:20px;
+				h2{
+					padding-top:20px;
+				}
+
+				p{
+					padding-top:15px;
+					padding-bottom:15px;
+				}
 			}
 
-			p{
-				padding-top:15px;
-				padding-bottom:15px;
+			&.social{
+				height:150px;
+
+				article{
+					float:none;
+					display:block;
+					height:50px;
+					text-align:center;
+
+					&:nth-child(1){
+						text-align:center;
+						padding-top:10px;
+
+						h3{
+							position:relative;
+							width:0px;
+							display:initial;
+						}
+						ul{
+							position:relative;
+							@include center();
+							left:10px;
+							padding-top:5px;
+
+							li{
+
+							}
+						}
+					}
+
+					&:nth-child(2){
+						height:50px;
+						float:none;
+						@include center();
+						margin-top:15px;
+
+						h3{
+							float:none;
+							margin:0;
+							padding-bottom:10px;
+						}
+
+						form{
+							float:none;
+
+							input{
+								
+								&:nth-child(1), &:nth-child(2){
+									width:100px;
+								}
+								&:nth-child(3){
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}

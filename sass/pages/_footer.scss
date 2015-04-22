@@ -1,0 +1,185 @@
+footer{
+	width:100%;
+	min-height:260px;
+	padding-top:50px;
+
+	article{
+		float:left;
+		margin-bottom:10px;
+		
+		h3{
+			padding-top:7px;
+			padding-bottom:5px;
+		}
+
+		&:nth-child(1){
+			margin-left:50px;
+			h4{
+				padding-bottom:5px;
+			}
+			
+			p{
+				line-height: 25px;
+			}
+		}
+
+		&:nth-child(2){
+			margin-left:50px;
+			width:35%;
+			height:240px;
+
+			iframe{
+				width:100%;
+				height:100%;
+			}
+		}
+
+		&:nth-child(3){
+			float:right;
+			margin-right:50px;
+			text-align:right;
+
+			h5{
+				display:inline;
+				margin-right:10px;
+			}
+
+			a{
+				color:$second_text_color;
+				line-height: 25px;
+			}
+		}
+
+		&:nth-child(4){
+			width:100%;
+			margin-top:30px;
+			color:rgba(56,56,56,0.7);
+			font-size: 10pt;
+
+			a{ color:rgba(56,56,56,0.7); }
+
+			span{
+				&:nth-child(1){
+					margin-left:50px;
+				}
+
+				&:nth-child(2){
+					float:right;
+					margin-right:50px;
+				}
+			}
+		}
+	}
+}
+
+@media #{$tablet}{
+	footer{
+
+		article{
+
+			&:nth-child(1){
+				@include tablet_margins();
+				margin-right:0px;
+
+				h4{
+				}
+				p{
+				}
+			}
+
+			&:nth-child(2){
+				margin-left:20px;
+				width:32%;
+				height:240px;
+
+				iframe{
+				}
+			}
+
+			&:nth-child(3){
+				@include tablet_margins();
+				margin-left:0px;
+
+				h5{
+				}
+
+				a{
+				}
+			}
+
+			&:nth-child(4){
+
+				span{
+					&:nth-child(1){
+						@include tablet_margins();
+						margin-right:0px;
+					}
+
+					&:nth-child(2){
+						@include tablet_margins();
+						margin-left:0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media #{$phone}{
+	footer{
+		text-align:center;
+
+		article{
+			float:none;
+
+			&:nth-child(1){
+				@include phone_margins();
+				margin-right:0px;
+
+				h4{
+				}
+				p{
+				}
+			}
+
+			&:nth-child(2){
+				width:100%;
+				height:240px;
+				margin:0px;
+
+				iframe{
+					width:100%;
+					height:100%;
+				}
+			}
+
+			&:nth-child(3){
+				@include phone_margins();
+				margin-left:0px;
+				float:none;
+				text-align: center;
+
+				h5{
+				}
+
+				a{
+				}
+			}
+
+			&:nth-child(4){
+
+				span{
+					&:nth-child(1){
+						@include phone_margins();
+						margin-right:0px;
+					}
+
+					&:nth-child(2){
+						@include phone_margins();
+						margin-left:0px;
+					}
+				}
+			}
+		}
+	}
+}
